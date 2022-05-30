@@ -13,6 +13,8 @@ entity Authors : managed {
         @title         : 'Lastname'
         @mandatory
         sLastName  : String not null;
+        @title         : 'Notes'
+        sNotes     : String;
         @title         : 'Book'
         to_Books   : Composition of many Books
                          on to_Books.to_Authors.sId = sId;
@@ -25,6 +27,8 @@ entity Books : managed {
         @title         : 'Title'
         @mandatory
         sTitle     : String not null;
+        @title         : 'Notes'
+        sNotes     : String;
         @title         : 'Author'
         to_Authors : Composition of one Authors;
 }

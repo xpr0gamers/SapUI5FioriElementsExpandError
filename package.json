@@ -9,7 +9,7 @@
   },
   "devDependencies": {
     "@sap/eslint-plugin-ui5-jsdocs": "^2.0.8",
-    "@sap/ux-specification": "^1.100.2",
+    "@sap/ux-specification": "^1.100.3",
     "@sapui5/ts-types": "^1.102.0",
     "cds2types": "^2.7.2",
     "eslint": "^8.16.0",
@@ -19,7 +19,8 @@
     "start": "npx cds-ts run",
     "watch": "npx cds-ts watch",
     "deploy-sqlite": "cds deploy --to sqlite",
-    "build": "npm run build:cds && npm run build:ts"
+    "build": "npm run build:cds && npm run build:ts",
+    "watch-authors": "cds watch --open authors/webapp/index.html#fe-lrop-v4"
   },
   "cds": {
     "requires": {
@@ -34,5 +35,7 @@
       "version": "v4"
     }
   },
-  "sapux": []
+  "sapux": [
+    "app/authors"
+  ]
 }
